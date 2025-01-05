@@ -51,7 +51,7 @@ class TestMatrix {
         long time;
         for (final int threads : new int[] { 1, 2, 3, 8, 16, 32, 100 }) {
             // Replace with your implementation
-            final SumMatrix sumList = // new MultiThreadedSumMatrix(threads);
+            final SumMatrix sumList = new MultiThreadedSumMatrix(threads);
                 new SumMatrix() {
                     @Override
                     public double sum(final double[][] matrix) {
